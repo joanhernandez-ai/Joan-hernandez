@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Los Equipos Más Ganadores del Super Bowl</title>
+    <style>
+        body {
+            background-color: #000;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 36px;
+            margin: 20px 0;
+        }
+
+        .linea-blanca {
+            border: none;
+            height: 2px;
+            background-color: white;
+            margin: 20px 0;
+        }
+
+        .tabla-cascos {
+            width: 80%;
+            margin: 20px auto;
+        }
+
+        .tabla-cascos img {
+            max-width: 100px; /* Ajustar el tamaño de las imágenes */
+            vertical-align: middle;
+        }
+
+        .texto-casco {
+            margin: 20px;
+            font-size: 16px;
+        }
+
+        audio {
+            margin: 20px 0;
+        }
+
+        .linea-color {
+            height: 3px;
+            background-color: yellow;
+            margin: 20px 0;
+        }
+
+        .vinculo-nfl {
+            font-size: 18px;
+            margin: 20px;
+        }
+
+        .desarrollador {
+            font-size: 14px;
+            color: #ccc;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título -->
+    <h1>LOS EQUIPOS MAS GANADORES DEL SUPERBOWL</h1>
+
+    <!-- Línea blanca -->
+    <div class="linea-blanca"></div>
+
+    <!-- Tabla de cascos y textos -->
+    <table class="tabla-cascos">
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/8/8e/Pittsburgh_Steelers_helmet.svg" alt="Acereros de Pittsburg"></td>
+            <td class="texto-casco">Los Acereros de Pittsburg fue el primer equipo en lograr 6 triunfos en el Superbowl (1975, 1976, 1979, 1980, 2006 y 2009).</td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/4/4b/New_England_Patriots_helmet.svg" alt="Patriotas de New England"></td>
+        </tr>
+    </table>
+
+    <p class="texto-casco">(GANADORES DE 4 o MAS TROFEOS VINCE LOMBARDI)</p>
+
+    <audio controls>
+        <source src="nfl_theme.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Tabla de cascos -->
+    <table class="tabla-cascos">
+        <tr>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/2/20/Dallas_Cowboys_helmet.svg" alt="Cowboys"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/2/2c/San_Francisco_49ers_helmet.svg" alt="49ers"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/6/6b/Green_Bay_Packers_helmet.svg" alt="Packers"></td>
+            <td><img src="https://upload.wikimedia.org/wikipedia/en/5/57/New_York_Giants_helmet.svg" alt="Giants"></td>
+        </tr>
+        <tr>
+            <td class="texto-casco">1972, 1978, 1993, 1994 y 1996</td>
+            <td class="texto-casco">1982, 1985, 1989, 1990 y 1995</td>
+            <td class="texto-casco">1967, 1968, 1997 y 2011</td>
+            <td class="texto-casco">1987, 1991, 2008 y 2012</td>
+        </tr>
+    </table>
+
+    <!-- Línea de color -->
+    <div class="linea-color"></div>
+
+    <!-- Datos de los equipos -->
+    <div class="desarrollador">
+        Broncos (3), Raiders (3), Redskins (3), Delfines (2), Potros (2), Cuervos (2)
+    </div>
+
+    <!-- Línea blanca -->
+    <div class="linea-blanca"></div>
+
+    <!-- Vínculo a NFL -->
+    <div class="vinculo-nfl">
+        <a href="https://www.nfl.com" target="_blank">Quieres conocer más? Visita nfl.com</a>
+    </div>
+
+    <!-- Datos del desarrollador -->
+    <div class="desarrollador">
+        Datos de Autor (alumno) <br>
+        Nombre Completo
+    </div>
+
+</body>
+</html>

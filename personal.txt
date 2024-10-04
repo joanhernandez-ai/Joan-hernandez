@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página Personal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #f4f4f4;
+        }
+        h1 {
+            color: black;
+            margin-top: 20px;
+        }
+        img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            margin-top: 20px;
+        }
+        .section-title {
+            font-size: 20px;
+            margin-top: 40px;
+            font-weight: bold;
+        }
+        .info {
+            margin: 10px 0;
+        }
+        .social-links a {
+            text-decoration: none;
+            color: blue;
+            margin: 10px 0;
+            display: block;
+        }
+        .skills, .hobbies {
+            margin: 20px 0;
+        }
+        .footer {
+            background-color: limegreen;
+            padding: 10px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Título Personal -->
+    <h1>Joan Ricardo Hernández Salazar</h1>
+
+    <!-- Fotografía de Perfil -->
+    <img src="tu_foto.jpg" alt="Foto de Perfil">
+
+    <!-- Frase -->
+    <p>"Viviendo un día a la vez, siempre aprendiendo."</p>
+
+    <!-- Datos Personales -->
+    <div class="section-title">Datos Personales</div>
+    <p class="info"><strong>Nombre:</strong> Joan Ricardo Hernández Salazar</p>
+    <p class="info"><strong>Email:</strong> joan.hernandez@example.com</p>
+    <p class="info"><strong>Facebook:</strong> Joan Hernández</p>
+    <p class="info"><strong>Twitter:</strong> @joan_hernandez_8</p>
+
+    <!-- Lugar de Trabajo y Habilidades -->
+    <div class="section-title">Lugar de Trabajo</div>
+    <p class="info">Desarrollador Web en <strong>Mi Empresa de Desarrollo</strong></p>
+
+    <div class="section-title">Habilidades</div>
+    <ul class="skills">
+        <li>Programación en C++</li>
+        <li>Desarrollo web en HTML, CSS y JavaScript</li>
+        <li>Manejo de bases de datos SQL</li>
+    </ul>
+
+    <!-- Hobbies y Pasatiempos -->
+    <div class="section-title">Hobbies y Pasatiempos</div>
+    <ul class="hobbies">
+        <li>Jugar fútbol</li>
+        <li>Leer libros de ciencia ficción</li>
+        <li>Viajar y conocer nuevas culturas</li>
+    </ul>
+
+    <!-- Redes Sociales -->
+    <div class="section-title">Redes Sociales</div>
+    <div class="social-links">
+        <a href="https://www.instagram.com/joan_hernandez_8/" target="_blank">Instagram: @joan_hernandez_8</a>
+        <a href="https://www.facebook.com/joan.hernandez" target="_blank">Facebook: Joan Hernández</a>
+        <a href="https://twitter.com/joan_hernandez_8" target="_blank">Twitter: @joan_hernandez_8</a>
+    </div>
+
+    <!-- Firma -->
+    <div class="footer">
+        FIRMA DE JOAN HERNÁNDEZ
+    </div>
+
+</body>
+</html>

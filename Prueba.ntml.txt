@@ -1,0 +1,26 @@
+Activo						Pasivo
+Circulante						Circulante
+Caja Chica						Proveedores
+Bancos						Acreedores
+Clientes						Documentos por Pagar
+Almacén						Prestamos Bancarios
+Documentos por Cobrar						IVA Trasladado
+Deudores						Rentas Cobradas por Anticipado
+Depósitos en Ganrantía						Intereses Cobrados por Anticipado
+Acciones y Valores						No Circulante
+IVA Acreditable						Hipotecas por pagar a L.P.
+Gastos de Instalación						Prestamo Bancarios L.P.
+Gastos de Organización						Documentos por Pagar L.P.
+Propaganda y Publicidad						Total de Pasivo
+Papelería y Utiles de Esritorio						Capital Contable
+Intereses Pagados por Anticipado						Capital Social
+Rentas Pagadas por Anticipado						Utilidad o Pérdida del Ejercicio
+Seguros Pagados por Anticipado						Total de Capital Contable
+No Circulante						
+Terrenos 						
+Edificios						
+Equipo de Oficina						
+Equipo de Cómputo						
+Equipo de Transporte						
+Equipo de Reparto						
+Documentos por Cobrar a L.P.						
