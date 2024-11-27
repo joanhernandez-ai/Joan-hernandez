@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejercicio hamburguesas</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+            border: 1px solid #ccc;
+            vertical-align: top;
+        }
+        .header-table {
+            width: 100%;
+            border: none;
+            margin-bottom: 20px;
+        }
+        .logo {
+            width: 90%;
+            display: block;
+            margin: 0 auto;
+        }
+        .details {
+            text-align: left;
+        }
+        hr {
+            border: 1px solid #4CAF50; 
+            margin: 10px 0;
+        }
+        marquee {
+            color: #4CAF50; 
+            font-size: 18px;
+        }
+        .center {
+            text-align: center;
+        }
+        input[type="text"], select {
+            width: 100%;
+            padding: 5px;
+            margin-top: 5px;
+        }
+        .btn {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px;
+            border: none;
+            cursor: pointer;
+        }
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <table class="header-table">
+        <tr>
+            <td style="width: 25%;">
+                <img src="imagenes/logo.jpg" alt="Logotipo" class="logo">
+            </td>
+            <td style="width: 75%;" class="details">
+                <h1>hambuuuurguesssas</h1>
+                <hr>
+                <p>Av. Venustiano Carranza No. 1350-Nte, Centro, 64000 Monterrey, N.L.</p>
+                <p>Teléfono: XXXX-XXXX-XXXX</p>
+                <p>Página web: <a href="https://github.com/">PAGINA SUPER ESPECIAL</a></p>
+                <marquee>¡El mejor sabor en hamburguesas!</marquee>
+            </td>
+        </tr>
+    </table>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Seleccionar Producto</th>
+                <th>Detalles de mi Hamburguesa</th>
+                <th>Cantidad</th>
+                <th>Orden</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>    
+                <td>
+                    <input type="radio" name="HambEspecial" id="radiohambsencilla" value="radiohambsencilla">
+                    <label for="radiohambsencilla">Hamburguesa Sencilla 35.00 MXN</label>
+                    <br>
+                    <input type="radio" name="HambEspecial" id="radiohambespecial" value="radiohambespecial">
+                    <label for="radiohambespecial">Hamburguesa Especial 45.00 MXN</label>
+                    <br>
+                    <input type="radio" name="HambEspecial" id="radiohambdoble" value="radiohambdoble">
+                    <label for="radiohambdoble">Hamburguesa Doble 60.00 MXN</label>
+                    <br>
+                    <input type="radio" name="HambEspecial" id="radiohambsuprema" value="radiohambsuprema">
+                    <label for="radiohamsuprema">Hamburguesa Suprema 90.00 MXN</label>
+                </td>
+                <td>
+                    <input type="radio" name="tipo carne" id="radiocarnetradicional" value="radiocarnetradicional">
+                    <label for="radiocarneham">Tradicional Especial</label>
+                    <br>
+                    <input type="radio" name="tipo carne" id="radiocarneangus" value="radiocarneangus">
+                    <label for="radiocarneangus">Angus</label>
+                    <br>
+                    <input type="radio" name="tipo carne" id="radiocarnepollo" value="radiocarnepollo">
+                    <label for="radiocarnepollo">Pollo</label>
+                    <br>
+                    <input type="radio" name="tipo carne" id="radiocarneroastbeef" value="radiocarneroastbeef">
+                    <label for="radiocarneroastbeef">Roast Beef</label>
+                </td>   
+                <td>
+                    <label for="cantidad">Número de hamburguesas:</label>
+                    <input type="text" id="cantidad" name="cantidad">
+                </td>
+                <td>
+                    <h3>Datos del Comprador:</h3>
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" id="nombre" name="nombre">
+                    
+                    <label for="telefono">Teléfono:</label>
+                    <input type="text" id="telefono" name="telefono">
+                    
+                    <label for="direccion">Dirección:</label>
+                    <input type="text" id="direccion" name="direccion">
+
+                    <h3>Tipo de Entrega:</h3>
+                    <label for="listadeEntregas">Entregar en:</label>
+                    <select name="tipo de entrega" id="listadeEntregas">
+                        <option value="1">A domicilio</option>
+                        <option value="2">Para comer aquí</option>
+                        <option value="3">Pick Up</option>
+                    </select>
+
+                    <div class="center">
+                        <button type="submit" class="btn">Calcular Pedido</button>
+                    </div>
+                </td>  
+            </tr>
+        </tbody>
+        <tfoot></tfoot>
+    </table>
+    
+</body>
+</html>

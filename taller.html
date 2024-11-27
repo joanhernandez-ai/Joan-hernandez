@@ -1,0 +1,189 @@
+<!DOCTYPE html> 
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios Automotrices - Tu Taller de Confianza</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        header img {
+            width: 300px; 
+            height: auto; 
+            display: block;
+            margin: 0 auto; 
+        }
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+        .container {
+            display: flex;
+            justify-content: space-between;
+            border: 1px solid #000;
+            padding: 20px;
+            width: 100%;
+        }
+        .section {
+            border: 1px solid #000;
+            padding: 10px;
+            width: 30%;
+            background-color: #fff;
+        }
+        button {
+            background-color: #333;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+        button:hover {
+            background-color: #555;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            margin-top: 20px;
+        }
+        .message {
+            color: green;
+            font-weight: bold;
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <img src="imagenes/logotipo.jpg" alt="Logotipo del negocio">
+    <h1>Servicios Automotrices - Tu Taller de Confianza</h1>
+</header>
+
+<div class="container">
+    <div class="section">
+        <h3>Servicios</h3>
+        <form>
+            <input type="checkbox" id="aceite" name="servicio1">
+            <label for="aceite">Cambio de Aceite y filtro.</label><br>
+
+            <input type="checkbox" id="afinacion" name="servicio2">
+            <label for="afinacion">Afinación General.</label><br>
+
+            <input type="checkbox" id="aire" name="servicio3">
+            <label for="aire">Mantenimiento a Aire Acondicionado.</label><br>
+
+            <input type="checkbox" id="frenos" name="servicio4">
+            <label for="frenos">Servicio de Frenos.</label><br>
+
+            <input type="checkbox" id="filtro" name="servicio5">
+            <label for="filtro">Sustitución del Filtro de aceite.</label><br>
+
+            <input type="checkbox" id="alineacion" name="servicio6">
+            <label for="alineacion">Alineación y Balanceo.</label><br>
+
+            <input type="checkbox" id="sistema" name="servicio7">
+            <label for="sistema">Sistema de Enfriamiento.</label><br>
+
+            <input type="checkbox" id="amortiguadores" name="servicio8">
+            <label for="amortiguadores">Amortiguadores.</label><br>
+        </form>
+    </div>
+
+    
+    <div class="section">
+        <h3>Tipo de motor</h3>
+        <form>
+            <input type="radio" id="4cilindros" name="motor" value="4cilindros">
+            <label for="4cilindros">4 cilindros</label><br>
+
+            <input type="radio" id="6cilindros" name="motor" value="6cilindros">
+            <label for="6cilindros">6 cilindros</label><br>
+
+            <input type="radio" id="8cilindros" name="motor" value="8cilindros">
+            <label for="8cilindros">8 cilindros</label><br>
+
+            <h3>Tipo de auto</h3>
+
+            <input type="radio" id="sedan" name="auto" value="sedan">
+            <label for="sedan">Sedan</label><br>
+
+            <input type="radio" id="lujo" name="auto" value="lujo">
+            <label for="lujo">Lujo</label><br>
+
+            <input type="radio" id="deportivo" name="auto" value="deportivo">
+            <label for="deportivo">Deportivo</label><br>
+
+            <input type="radio" id="familiar" name="auto" value="familiar">
+            <label for="familiar">Familiar</label><br>
+
+            <input type="radio" id="camioneta" name="auto" value="camioneta">
+            <label for="camioneta">Camioneta</label><br>
+        </form>
+    </div>
+
+    
+    <div class="section">
+        <h3>Agenda tu cita</h3>
+        <form>
+            <label for="marca">Marca</label>
+            <input type="text" id="marca" name="marca"><br>
+
+            <label for="modelo">Modelo</label>
+            <input type="text" id="modelo" name="modelo"><br>
+
+            <label for="anio">Año</label>
+            <input type="text" id="anio" name="anio"><br>
+
+            <label for="kilometraje">Kilometraje</label>
+            <input type="text" id="kilometraje" name="kilometraje"><br>
+
+            <label for="factura">¿Requiere factura? (si o no)</label>
+            <input type="text" id="factura" name="factura"><br>
+
+            <h3>Tipo de pago</h3>
+
+            <input type="checkbox" id="efectivo" name="pago1">
+            <label for="efectivo">Efectivo</label><br>
+
+            <input type="checkbox" id="credito" name="pago2">
+            <label for="credito">Tarjeta de Crédito o Débito</label><br>
+
+            <input type="checkbox" id="transferencia" name="pago3">
+            <label for="transferencia">Transferencia Electrónica</label><br>
+
+            <input type="checkbox" id="credito3meses" name="pago4">
+            <label for="credito3meses">Crédito a 3 meses</label><br>
+        </form>
+        <button onclick="mostrarMensaje()">Enviar</button>
+        <div class="message" id="mensaje">GRACIAS POR CONFIAR EN NOSOTROS.... SU COCHE ESTÁ EN BUENAS MANOS.</div>
+    </div>
+</div>
+
+<footer>
+    <p>Desarrollado por: Joan hernandez</p>
+    <p>Email: Joanricardo888@gmail.com</p>
+</footer>
+
+<script>
+    function mostrarMensaje() {
+        document.getElementById("mensaje").style.display = "block";
+    }
+</script>
+
+</body>
+</html>
