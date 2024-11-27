@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Página de Pizzas</title>
+    <style>
+        body {
+            background-color: #F98903;
+            font-family: Arial, sans-serif;
+        }
+        table {
+            width: 90%;
+            border: 3px solid black;
+            margin: auto;
+            background-color: #FFD700;
+        }
+        td {
+            padding: 15px;
+        }
+        hr {
+            border: 1px solid black;
+        }
+        input[type="text"] {
+            width: 50px;
+        }
+        .pizza-banner {
+            text-align: center;
+            margin: 10px 0;
+        }
+        .pizza-banner img {
+            width: 10%;
+        }
+        select, input[type="checkbox"], input[type="radio"] {
+            margin-bottom: 10px;
+        }
+    </style>
+    <script>
+        function calcularTotal() {
+            
+            const cantidad = parseInt(document.pizzeria.canpiz.value) || 0;
+
+            
+            let precioTamaño = 0;
+            if (document.pizzeria.cantpi[0].checked) { precioTamaño = 45; }
+            if (document.pizzeria.cantpi[1].checked) { precioTamaño = 90; }
+            if (document.pizzeria.cantpi[2].checked) { precioTamaño = 150; }
+            if (document.pizzeria.cantpi[3].checked) { precioTamaño = 250; }
+            if (document.pizzeria.cantpi[4].checked) { precioTamaño = 400; }
+
+            
+            let precioPan = 0;
+            if (document.pizzeria.tippan[1].checked) { precioPan = 15; }
+            if (document.pizzeria.tippan[2].checked) { precioPan = 20; }
+            if (document.pizzeria.tippan[3].checked) { precioPan = 30; }
+
+           
+            let precioIngredientes = 0;
+            if (document.pizzeria.ingre1.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre2.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre3.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre4.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre5.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre6.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre7.checked) { precioIngredientes += 5; }
+            if (document.pizzeria.ingre8.checked) { precioIngredientes += 5; }
+
+            
+            const precioEspecial = parseInt(document.pizzeria.pizzaselect.value) || 0;
+
+           
+            const buffet = document.pizzeria.bufff.value;
+            const adultos = parseInt(document.pizzeria.adul.value) || 0;
+            const niños = parseInt(document.pizzeria.nin.value) || 0;
+
+            let total = 0;
+            if (buffet === "SI") {
+                total = (adultos * 120) + (niños * 60);
+            } else {
+                total = (precioTamaño + precioPan + precioIngredientes + precioEspecial) * cantidad;
+            }
+
+            
+            document.pizzeria.totpiz.value = total;
+        }
+    </script>
+</head>
+<body>
+    <div class="pizza-banner">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza">
+        
+    </div>
+    <form name="pizzeria">
+        <table>
+            <tr>
+                <td>
+                    <b>CANTIDAD:</b> <input type="text" name="canpiz" size="3" onchange="calcularTotal();" value="1"><br><hr>
+                    <b>TAMAÑO:</b><br>
+                    <input type="radio" name="cantpi" onclick="calcularTotal();" checked> Personal 45.00<br>
+                    <input type="radio" name="cantpi" onclick="calcularTotal();"> Chica 90.00<br>
+                    <input type="radio" name="cantpi" onclick="calcularTotal();"> Mediana 150.00<br>
+                    <input type="radio" name="cantpi" onclick="calcularTotal();"> Familiar 250.00<br>
+                    <input type="radio" name="cantpi" onclick="calcularTotal();"> Suprema 400.00<br><hr>
+                    <b>TIPO DE PAN:</b><br>
+                    <input type="radio" name="tippan" onclick="calcularTotal();" checked> Normal +0.00<br>
+                    <input type="radio" name="tippan" onclick="calcularTotal();"> Delgada +15.00<br>
+                    <input type="radio" name="tippan" onclick="calcularTotal();"> Pan Pizza +20.00<br>
+                    <input type="radio" name="tippan" onclick="calcularTotal();"> Hut Cheese +30.00<br>
+                </td>
+                <td>
+                    <b>INGREDIENTES (5.00 c/u):</b><br>
+                    <input type="checkbox" name="ingre1" onclick="calcularTotal();"> Jamon<br>
+                    <input type="checkbox" name="ingre2" onclick="calcularTotal();"> Peperoni<br>
+                    <input type="checkbox" name="ingre3" onclick="calcularTotal();"> Tocino<br>
+                    <input type="checkbox" name="ingre4" onclick="calcularTotal();"> Champiñones<br>
+                    <input type="checkbox" name="ingre5" onclick="calcularTotal();"> Chorizo Español<br>
+                    <input type="checkbox" name="ingre6" onclick="calcularTotal();"> Piña<br>
+                    <input type="checkbox" name="ingre7" onclick="calcularTotal();"> Salami<br>
+                    <input type="checkbox" name="ingre8" onclick="calcularTotal();"> Aceituna<br><hr>
+                    <b>ESPECIALES:</b>
+                    <select name="pizzaselect" onchange="calcularTotal();">
+                        <option value="0">Margarita +0.00</option>
+                        <option value="15">4 Quesos +15.00</option>
+                        <option value="10">Hawaiana +10.00</option>
+                        <option value="15">Napolitana +15.00</option>
+                        <option value="25">New York +25.00</option>
+                    </select><br><hr>
+                    <b>¿Quieres Buffet?:</b>
+                    <select name="bufff" onchange="calcularTotal();">
+                        <option value="SI">SI</option>
+                        <option value="NO">NO</option>
+                    </select><br>
+                    Adultos (120 c/u): <input type="text" name="adul" size="2" onchange="calcularTotal();"><br>
+                    Niños (60 c/u): <input type="text" name="nin" size="2" onchange="calcularTotal();">
+                </td>
+                <td>
+                    <b>TOTAL A PAGAR:</b><br>
+                    <input type="text" name="totpiz" readonly>
+                </td>
+            </tr>
+
+        
+        
+        </table>
+        
+
+        
+        <div style="text-align: center; margin-top: 20px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+            <img src="C:\Users\joanr\OneDrive\Escritorio\Joan-hernandez-main\Joan-hernandez-main\Joan-hernandez\ejemplos javascript\pizzas.webp" alt="Pizza" style="width: 8%; margin: 5px;">
+        </div>
+        
+    </form>
+</body>
+</html>

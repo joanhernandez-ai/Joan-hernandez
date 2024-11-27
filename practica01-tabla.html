@@ -4,159 +4,185 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="fontawesome-free-6.6.0-web/fontawesome-free-6.6.0-web/css/all.css">
-    <title>practica de tabla</title>
+    <title>Practica de tabla</title>
 
     <style>
-            table{
-                    margin:auto;
-                    margin-top: auto;
-                    text-align:center;
-                    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-                    font-size: 16px;
-                    
+        table {
+            margin: auto;
+            margin-top: 50px;
+            text-align: center;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-size: 16px;
+            border-collapse: collapse;
+            width: 80%;
+        }
 
-            }
-           
+        th, td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
 
+        tr:nth-child(even) {
+            background-color: #f2f2f2;
+        }
+
+        th {
+            background-color: #4CAF50;
+            color: white;
+        }
+
+        td:first-child {
+            color: #147856; /* Verde para los IDs */
+            text-decoration: underline;
+        }
+
+        td:last-child span {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        .fa-info-circle {
+            color: #17a2b8; /* Azul para el ícono de información */
+        }
+
+        .fa-edit {
+            color: #28a745; /* Verde para el ícono de edición */
+        }
+
+        .fa-trash-alt {
+            color: #dc3545; /* Rojo para el ícono de eliminar */
+        }
 
     </style>
-
-
-
 </head>
 <body>
     
 <table>
 <thead>
     <tr>
-<th>ID</th>
-<th>NOMBRE</th>
-<th>APPELLIDO</th>
-<th>CORREO</th>
-<th>OPCIONES</th>
+        <th>ID</th>
+        <th>NOMBRE</th>
+        <th>APELLIDO</th>
+        <th>CORREO</th>
+        <th>OPCIONES</th>
     </tr>
 </thead>
 <tbody>
-       <tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    <tr>
+        <td>14785632</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr>
-       <tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>58461332</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>34752559</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>78452154</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>55896723</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>61478523</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>73698521</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>87531596</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>93571592</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
+    </tr>
+    <tr>
+        <td>10369147</td>
+        <td>Jorge</td>
+        <td>Durand</td>
+        <td>xxxxx@gmail.com</td>
+        <td>
+            <span class="fas fa-info-circle"></span>
+            <span class="fas fa-edit"></span>
+            <span class="fas fa-trash-alt"></span>
         </td>
-       </tr><tr>
-        <td>123456789</td>
-        <td>ricardo</td>
-        <td>elizalde</td>
-        <td>ricardo.gmail.com</td>
-        <td>   
-                    <span class="fas fa-info-circle"></span>
-                    <span class="fas fa-edit"></span>
-                    <span class="fas fa-trash-alt"></span>
-        </td>
-       </tr>
-        
-
+    </tr>
 </tbody>
 <tfoot>
 
 </tfoot>
 </table>
 
-    
 </body>
 </html>

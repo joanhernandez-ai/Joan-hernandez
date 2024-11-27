@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ejemplo JavaScrip01</title>
+
+<script src="js/index.js">
+</script>
+    
+
+
+</head>
+<body>
+    
+</body>
+
+
+<script>
+
+
+var matricula = 45548;
+var nombre = "joan ricardo "
+alert(matricula);
+alert("mi nombre es:  " + nombre + "mi matricula es:  " + matricula);
+
+//variables de tipo  numerico
+
+var edad = 20;
+var decimal = 20.45;
+
+//operariones
+
+// var suma = 5 + 3; 
+// var multiplica = 8 * 4;
+
+
+// console.info(edad)
+// console.info(decimal)
+// console.info(suma)
+// console.info(multiplica)
+
+// var apellido = "hernandez salazar ";
+// var estadoCivil = "soltero";
+
+// console.warn(suma)
+// console.log(nombre + apellido + estadoCivil)
+
+
+//arreglos (arrays)
+var amigos = ["guillermo", "valeria", "elena", "gustavo", "elias"];
+var edades = [18,21,20,19,21];
+
+amigos[0] = "memo";
+console.log(amigos[2]);
+document.writeln(amigos[2]);
+
+//saber la longitud de mi erreglo
+amigos.length; 
+console.log (amigos.length)
+
+//agregar NUEVOS elementos a mi arreglo
+
+amigos.push("Eloisa");
+amigos.push("brandon");
+console.log(amigos.length);
+document.writeln(amigos);
+//borrar amigos
+
+amigos.pop();
+amigos.pop();
+
+
+
+//juntar dos arreglos (concatenar)
+
+var familia = ["betty" , "Jared"]
+var todos = amigos.concat(edades);
+console.log(todos);
+document.writeln(todos);
+
+
+
+
+console.log(amigos);
+
+
+
+
+var amigosOrdenados = amigos.sort();
+document.writeln(amigosOrdenados);
+
+
+//condicionales
+
+if (edades[0] > edades [1])
+
+{
+    document.writeln("la edad del arreglo en la posicion 0 es mayor que el de la pisicion 1");
+}
+
+
+
+else{
+
+    document.writeln("la edad del arreglo en la posicion 0 es mayor que el de la pisicion 1");
+}
+
+
+
+
+
+
+// var respuesta = true;
+// var opcines = false;
+
+</script>
+</html>
